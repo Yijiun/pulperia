@@ -4,9 +4,15 @@
 
 import  pandas as pd
 
-archivo = 'inventario_productos.csv'
-df = pd.read_csv(archivo)
-print(df)
-
-
-
+def leer_inventario_csv():
+    """
+        Esta funcion va a leer el inventario en formato csv
+    """
+    try:
+        archivo = "inventario_de_productos.csv"
+        df = pd.read_csv(archivo)
+    
+        return df
+    except:
+        print("El archivo no existe")
+   
