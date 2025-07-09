@@ -1,4 +1,4 @@
-Producto,Cantidad,Cateogria,Codigo,Precio compra,Precio venta
+Producto,Cantidad,Categoria,Codigo,Precio compra,Precio venta
 Sandia,10,Fruta,100,1200.0,1680.0
 Mango,16,Fruta,101,1275.0,1785.0
 Leche,15,Bebida,102,1530.0,2142.0
@@ -8,6 +8,5 @@ Arroz,40,Cereal,105,1895.0,2653.0
 Cebollin,10,Vegetal,106,650.0,910.0
 NutriSource,11,Mascota,107,15345.0,21483.0
 Helado,20,Refrigerio,108,5995.0,8393.0
-pera,12,Fruta,109,1000.0,1400.0
-Naranja,45,Fruta,110,3000.0,4200.0
-Chocolate,20,Snack,111,1000.0,1400.0
+Pera,8,Fruta,109,1000.0,1400.0
+Melon,40,Fruta,110,6000.0,8400.0

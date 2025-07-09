@@ -1,31 +1,10 @@
 from archivo import leer_inventario_csv
 from menu import desplegar_menu
 from producto import agregar_articulo
+from remover  import remover_producto
+from actualizar import desplegar_menu_actualizar
 
 
-# #Pedir al usuario el nombre del producto y la cantidad para restar
-# try:
-#     producto = input("Introducir el nombre del producto: ")
-#     cantidad = int(input("Introduzca la cantidad vendida del producto: "))
-
-
-# #Revisar si el producto existe dentro del inventario
-#     if producto in df["Producto"].values:
-#         df.loc[df["Producto"] == producto, "Cantidad"] -= cantidad
-#         #Evitar que el usuario agregue un numero negativo
-#         df["Cantidad"] = df["Cantidad"].apply(lambda x: max(x,0))
-#         print("/nInventario actual:")
-#         print(df)
-        
-#         #Guardar cambios en el mismo csv
-#         df.to_csv("inventario_de_productos.csv", index=False)
-#     else:
-#         print("Este producto no existe en el inventario")
-    
-# except ValueError:
-#     print("Error: Ingrese un numero valido para la cantidad")
-# except Exception as e:
-#     print(f'Se ha producido un error inesperado: {e}')
         
 if __name__ == "__main__":
     nombre_usuario= "E" 
@@ -42,7 +21,10 @@ if __name__ == "__main__":
             print(leer_inventario_csv())
         if opcion == "2":
             agregar_articulo()
-            
+        if opcion == "3":
+            remover_producto()
+        if opcion == "4":
+            desplegar_menu_actualizar()
         
 
     else:
