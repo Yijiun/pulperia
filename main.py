@@ -5,7 +5,11 @@ from producto import agregar_articulo
 from remover  import remover_producto
 from actualizar import desplegar_menu_actualizar
 from buscar import localizar
+from archivo2 import leer_venta_csv
 from notificacion import notificacion
+from agregar import agregar_venta
+from quitar import remover_venta
+from salir import salir
 
 
 
@@ -28,10 +32,16 @@ if __name__ == "__main__":
             desplegar_menu_actualizar()
         if opcion == "5":
             notificacion()
+        if opcion == "6":
+            print(leer_venta_csv()) 
         if opcion == "7":
+            agregar_venta()
+        if opcion == "8":
             localizar()
-          
-            
+        if opcion == "9":
+            remover_venta()
+        if opcion == "10":
+            salir()   
         
 
     else:
