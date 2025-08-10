@@ -4,9 +4,9 @@ from archivo2 import leer_venta_csv
 import pandas as pd 
 
 def remover_venta():
-    eliminar_producto=input("Escriba el producto que desea eliminar de la lista de ventas: ")
+    quitar_producto=input("Escriba el producto que desea eliminar de la lista de ventas: ")
     df = leer_venta_csv()
-    df= df[df['Producto Vendido'] != eliminar_producto]
+    df= df[df['Producto Vendido'] != quitar_producto_producto]
     print(df)
     print("El producto se ha eliminado con exito")
     #Guardar en inventario
