@@ -1,4 +1,4 @@
-#Funcion de remover producto
+#Funcion de remover producto del inventario
 
 from archivo import leer_inventario_csv
 import pandas as pd 

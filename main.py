@@ -20,28 +20,28 @@ if __name__ == "__main__":
     
    # if usuario_digitado == nombre_usuario and contrasena_digitada == contrasena:#
     if iniciar_sesion() == True: 
-        desplegar_menu()
+        desplegar_menu() #mostar el menu principal
         opcion = input("Digite la opcion: ")
         if opcion == "1": 
-            print(leer_inventario_csv())
+            print(leer_inventario_csv()) # ver el inventario actual
         if opcion == "2":
-            agregar_articulo()
+            agregar_articulo() #Agregar nuevo producto al inventario
         if opcion == "3":
-            remover_producto()
+            remover_producto() # remover un producto del inventario
         if opcion == "4":
-            desplegar_menu_actualizar()
+            desplegar_menu_actualizar() # mostar el menu para actualizar informacion de inventario
         if opcion == "5":
-            notificacion()
+            notificacion() # mostar una notificacion de algun producto que tengas cantidad menos que 5
         if opcion == "6":
-            print(leer_venta_csv()) 
+            print(leer_venta_csv()) # mostrar el reporte de ventas
         if opcion == "7":
-            agregar_venta()
+            agregar_venta() #agregar ventas al reporte
         if opcion == "8":
-            localizar()
+            localizar() # buscar producto por codigo o nombre
         if opcion == "9":
-            remover_venta()
+            remover_venta() # remover una venta agregado por error
         if opcion == "10":
-            salir()   
+            salir()   # salir de menu principal 
         
 
     else:

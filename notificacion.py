@@ -1,3 +1,5 @@
+# notificar al usuario que es necesario hacer compra de un producto que con cantidad menos de 5
+
 from archivo import leer_inventario_csv
 import pandas as pd
 

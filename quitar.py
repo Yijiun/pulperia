@@ -1,4 +1,4 @@
-#Funcion de quitar del reporte de ventas una venta
+#Funcion de quitar una venta del reporte de ventas
 
 from archivo2 import leer_venta_csv
 import pandas as pd 

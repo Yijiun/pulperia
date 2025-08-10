@@ -12,6 +12,7 @@ def desplegar_menu_actualizar():
     print("3. Actualizar la cantidad de inventario por compra diaria")
     print("4. Actualizar la categoria del producto")
     print("5. Actualizar el precio de compra del producto")
+    print("6. Salir")
 
     opcion = input("Digite la opcion requerida: ")
     df = leer_inventario_csv()
@@ -44,7 +45,7 @@ def editar(df, opcion):
             nuevo_precio_venta = (nuevo_precio_compra * 0.4) + nuevo_precio_compra
             df.loc[df['Codigo'] == codigo_producto, ['Precio compra', 'Precio venta']] = \
                 [nuevo_precio_compra, nuevo_precio_venta]
-            print("El nuevo precio de compra y ven han sido actualizados.")    
+            print("El nuevo precio de compra y ven han sido actualizados.") 
     #Guardar datos del inventario
         df.to_csv("inventario_de_productos.csv", index=False)
         print(df)

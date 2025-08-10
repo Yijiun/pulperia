@@ -1,4 +1,4 @@
-#Desplegar menu
+#Desplegar menu principal
 
 def desplegar_menu():
     print("Estos son las siguientes opciones de servicio: ")

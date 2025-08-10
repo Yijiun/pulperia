@@ -5,8 +5,8 @@ from archivo2 import leer_venta_csv
 
 def agregar_venta():
     producto_vendido = str(input("Digite el nombre del producto vendido: "))
-    cantidad_vendida = int(input("Digite la cantidad vendida el producto"))
-    fecha = str(input("Digite la fecha de hoy con este formato Año/Mes/Dia"))
+    cantidad_vendida = int(input("Digite la cantidad vendida el producto: "))
+    fecha = str(input("Digite la fecha de hoy con este formato Año/Mes/Dia: "))
     precio_compra = float(input("Digite el precio de compra: "))
     precio_venta = (precio_compra * 0.4) + precio_compra
     suma_total = float(cantidad_vendida * precio_venta)
